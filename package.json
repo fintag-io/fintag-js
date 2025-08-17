@@ -1,0 +1,21 @@
+{
+  "name": "@fintag/js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fintag-io/fintag-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fintag-io/fintag-js/issues"
+  },
+  "homepage": "https://github.com/fintag-io/fintag-js#readme",
+  "description": ""
+}
