@@ -1,10 +1,9 @@
 {
   "name": "@fintag/js",
-  "description": "The JavaScript SDK for Fintag",
+  "description": "The JavaScript SDK for FinTag",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -17,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/fintag-io/fintag-js/issues"
   },
-  "homepage": "https://github.com/fintag-io/fintag-js#readme",
+  "homepage": "https://fintag.io",
   "devDependencies": {
     "@types/node": "^24.3.0",
     "nodemon": "^3.1.10",

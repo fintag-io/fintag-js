@@ -4,7 +4,7 @@ import crypto from "crypto";
 
 export class FintagClient {
   private apiKey: string;
-  private readonly baseUrl = "http://127.0.0.1:4000"; // Proxy, not real backend
+  private readonly baseUrl = "";
 
   constructor(apiKey: string) {
     this.apiKey = apiKey;
