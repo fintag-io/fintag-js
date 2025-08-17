@@ -1,9 +1,10 @@
 {
   "name": "@fintag/js",
+  "description": "The JavaScript SDK for Fintag",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,6 @@
     "url": "https://github.com/fintag-io/fintag-js/issues"
   },
   "homepage": "https://github.com/fintag-io/fintag-js#readme",
-  "description": "",
   "devDependencies": {
     "@types/node": "^24.3.0",
     "nodemon": "^3.1.10",
@@ -25,6 +25,6 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "fastify": "^5.5.0"
+    "axios": "^1.11.0"
   }
 }
