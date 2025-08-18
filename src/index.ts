@@ -4,7 +4,7 @@ import crypto from "crypto";
 
 export class FintagClient {
   private apiKey: string;
-  private readonly baseUrl = ""; // Base URL for the Fintag API
+  private readonly baseUrl = "<API_BASE_URL>"; // Base URL for the Fintag API
 
   constructor(apiKey: string) {
     this.apiKey = apiKey;
