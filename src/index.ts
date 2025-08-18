@@ -26,16 +26,18 @@ export class FintagClient {
   }
 
   async verify(fintag: string) {
+    const cleaned_fintag = fintag.startsWith("#") ? fintag.slice(1).trim() : fintag.trim();
     const res = await axios.get(
-      `${this.baseUrl}/fintag/verify/${fintag}`,
+      `${this.baseUrl}/fintag/verify/${cleaned_fintag}`,
       { headers: this.getHeaders() }
     );
     return res.data;
   }
 
   async getWalletInfo(fintag: string) {
+    const cleaned_fintag = fintag.startsWith("#") ? fintag.slice(1).trim() : fintag.trim();
     const res = await axios.get(
-      `${this.baseUrl}/fintag/wallet/${fintag}`,
+      `${this.baseUrl}/fintag/wallet/${cleaned_fintag}`,
       { headers: this.getHeaders() }
     );
     return res.data;
