@@ -1,7 +1,7 @@
 {
   "name": "@fintag/js",
   "description": "The JavaScript SDK for FinTag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "commonjs",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "ts-node tests/test.ts", 
+    "test": "ts-node tests/test.ts",
     "build": "tsup",
     "dev": "tsup --watch",
     "prepublishOnly": "npm run build"
