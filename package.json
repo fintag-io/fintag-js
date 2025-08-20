@@ -1,20 +1,21 @@
 {
   "name": "@fintag/js",
   "description": "The JavaScript SDK for FinTag",
-  "version": "1.0.2",
-  "type": "commonjs",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "version": "1.0.5",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "nodemon --watch src --ext ts --exec ts-node tests/test.ts"
+  },
   "files": [
     "dist"
   ],
-  "scripts": {
-    "test": "ts-node tests/test.ts",
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "prepublishOnly": "npm run build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fintag-io/fintag-js.git"
@@ -37,8 +38,11 @@
   },
   "homepage": "https://fintag.io",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.3.0",
+    "jest": "^30.0.5",
     "nodemon": "^3.1.10",
+    "ts-jest": "^29.4.1",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
